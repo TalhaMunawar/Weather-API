@@ -1,0 +1,112 @@
+<html>
+    <head>
+        <title>
+            Weather Forecast
+        </title>
+            
+            <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+            <link href="https://fonts.googleapis.com/css?family=Kavivanar" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+           
+    </head>
+    <body id="index">
+        <header>
+            <h3>Weather Forecast (5 days)</h3>
+        </header>
+
+        <div class="container">
+                <div class="row">    
+                        <div class="col-xs-8 col-xs-offset-1">
+                            <div class="input-group">
+                                <div class="input-group-btn search-panel">
+                                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                        <span id="search_concept">Search by</span> <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" role="menu">
+                                      <li><a href="#cityName">City Name</a></li>
+                                      <li><a href="#cityId">City Id</a></li>
+                                      <li><a href="#zipCode">Zip Code</a></li>
+                                     
+                                     
+                                    </ul>
+                                </div>
+                                <input type="hidden" name="search_param" value="all" id="search_param">         
+                                <input id="input_data" type="text" class="form-control" name="x" placeholder="Search term...">
+                                <span class="input-group-btn">
+                                    <button id="search-btn" class="btn btn-default" type="button" style="padding: 9px 40px">
+                                        <span class="glyphicon glyphicon-search"></span>
+                                    </button>
+                                </span>
+                            </div>
+                        </div>
+                </div>
+           
+                <div class="row" >
+                    <div class="display-box" style="display:none">
+                        <div id="cityName" class="row region" >
+                           
+                        </div>
+                        <div id="dayName" class="row grey-text-normal" >
+                            
+                        </div>
+                        <div id="weatherType" class="row grey-text-normal" >
+                            
+                        </div>
+
+                        <div class="row temprature-detail">
+                            <div  class="col-lg-6">
+                                <img id="weatherImage" src="">
+                                <span id="tempratureDigit"></span>  <sup>
+                                    <sup>O</sup><span id="c" class="conversion" >C</span>
+                                      |
+                                      <sup>O</sup><span id="f" class="conversion" >F </span>
+                                    </sup>
+                            </div>
+                            <div class="col-lg-6" style="padding-top: 20px;" >
+                                    <div id="pressure" class="row grey-text-normal" >
+                                            
+                                    </div>
+                                    <div id="humidity" class="row grey-text-normal" >
+                                            
+                                    </div>
+                                    <div id="wind" class="row grey-text-normal" >
+                                             
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div id="day1" class="five-box grey-text-normal">
+                                
+                               <span id="d1"></span>
+                            </div>
+                            <div id="day2" class="five-box grey-text-normal">
+                                <span id="d2"></span>
+                            </div>
+                            <div id="day3" class="five-box grey-text-normal">
+                                <span id="d3"></span>
+                            </div>
+                            <div id="day4" class="five-box grey-text-normal">
+                                <span id="d4"></span>
+                            </div>
+                            <div id="day5" class="five-box grey-text-normal">
+                                <span id="d5"></span>
+                            </div>
+
+                        </div>
+                    </div>    
+                  
+                </div>
+
+
+
+
+        </div>
+        <script src="js/lib/moment.js"></script>     
+        <script src="js/src/script.js"></script>
+
+</body>
+</html>

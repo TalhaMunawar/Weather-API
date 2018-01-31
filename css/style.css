@@ -1,0 +1,72 @@
+html, body, div, h1, h2, h3, p {
+    margin: 0px;
+    padding: 0px;
+  }
+header {
+    padding: 10px 40px;
+    background-color: #3b3b61;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    letter-spacing: 1px;
+    font-size: 11pt;
+    text-transform: uppercase;
+
+}
+
+header h3 {
+    margin: 5px;
+}
+
+.container {
+    
+    margin : 30px 200px;
+}
+.display-box {
+  
+    margin: 30px 150px;
+
+}
+.region {
+    font-size: 28px;
+    color : grey;
+}
+.grey-text-normal {
+    font-size: 18px;
+    color : grey;
+}
+
+
+.temprature-detail {
+    padding : 15px 0px;
+    font-size: 70px;
+     
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0px;
+}
+
+.temprature-detail  img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+.five-box{
+    width:15%;
+    display: inline-block;
+   
+    text-align: center;
+}
+sup {
+    top: -1em;
+    left: -.25em;
+    font-size: 40%;
+    position: relative;
+    color: gray;
+    
+}
+ .conversion {
+    cursor: pointer;
+ }
